@@ -1,16 +1,58 @@
-# React + Vite
+# Motta Tour - Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page criada para divulgação de excursões para praia, com foco em conversão (CTA para reserva).
 
-Currently, two official plugins are available:
+O projeto foi desenvolvido em React com Vite e estilizado com Tailwind CSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Visão geral
 
-## React Compiler
+A página contém:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Hero principal com imagem de fundo e chamadas de ação
+- Seção de roteiro da excursão
+- Seção de benefícios
+- Formulário de cadastro de reserva
+- Seção de contato
+- Footer com informações institucionais
 
-## Expanding the ESLint configuration
+## Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 19
+- Vite 7
+- Tailwind CSS 4
+
+## Como rodar localmente
+
+Pré-requisito: Node.js 18+
+
+```bash
+npm install
+npm run dev
+```
+
+A aplicação inicia em:
+
+`http://localhost:5173`
+
+## Scripts disponíveis
+
+- `npm run dev` - inicia ambiente de desenvolvimento
+- `npm run build` - gera build de produção
+- `npm run preview` - visualiza a build localmente
+- `npm run lint` - executa lint do projeto
+
+## Estrutura principal
+
+```text
+.
+├── public/
+│   ├── foto-praia.jpg
+│   ├── foto-ferias.jpg
+│   ├── foto-viagem.jpg
+│   └── logo.png
+├── src/
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+└── index.html
+```
