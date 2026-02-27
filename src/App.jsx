@@ -314,6 +314,48 @@ function App() {
           </div>
         </div>
       </section>
+
+      <footer className="border-t border-slate-800 bg-slate-950/80">
+        <div className="mx-auto grid max-w-6xl gap-10 px-6 py-12 text-center md:grid-cols-3 md:px-10">
+          <div className="flex flex-col items-center">
+            <div className="flex items-center justify-center gap-3">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-400 to-emerald-400">
+                <img src="/logo.png" alt="Logo Motta Tour" className="h-7 w-7 object-contain" />
+              </div>
+              <span className="text-xl font-black text-white">Motta Tour</span>
+            </div>
+            <p className="mt-4 max-w-sm text-sm leading-relaxed text-slate-400">
+              Excursões para praia com conforto, segurança e experiências inesquecíveis em cada roteiro.
+            </p>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <h4 className="text-sm font-bold uppercase tracking-wide text-slate-200">Navegação</h4>
+            <div className="mt-4 space-y-2 text-sm text-slate-400">
+              <a href="#roteiro" className="block transition hover:text-cyan-300">Roteiro</a>
+              <a href="#pacotes" className="block transition hover:text-cyan-300">Benefícios</a>
+              <a href="#reserva" className="block transition hover:text-cyan-300">Cadastro de reserva</a>
+              <a href="#contato" className="block transition hover:text-cyan-300">Contato</a>
+            </div>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <h4 className="text-sm font-bold uppercase tracking-wide text-slate-200">Atendimento</h4>
+            <div className="mt-4 space-y-2 text-sm text-slate-400">
+              <p>📍 Rio de Janeiro, Brasil</p>
+              <p>🕒 Seg a Sáb, 08h às 20h</p>
+              <p>📞 (24) 99999-9999</p>
+              <p>✉️ contato@mottatour.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="border-t border-slate-800">
+          <div className="mx-auto flex max-w-6xl items-center justify-center px-6 py-4 text-center text-xs text-slate-500 md:px-10">
+            <p>© {new Date().getFullYear()} Motta Tour. Todos os direitos reservados.</p>
+          </div>
+        </div>
+      </footer>
     </main>
   )
 }
